@@ -4,8 +4,8 @@ import qrcode
 from io import BytesIO
 
 # --- GEMINI API AYARI ---
-# Buraya Google AI Studio'dan aldığın API Key'i yazmalısın
-genai.configure(api_key="AIzaSyBV7utXd97uuMjdWwGzTFB_OeZCzz2lrUE")
+
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 # Sayfa Genişliği ve Başlık
